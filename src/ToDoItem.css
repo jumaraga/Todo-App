@@ -1,0 +1,11 @@
+.ul_container{
+   width: 500px;
+   height: 50px;
+   align-self: center;
+   border-radius: 10px;
+   box-shadow:rebeccapurple;
+   color: white;
+}
+.task{
+   display: inline-block;
+}
