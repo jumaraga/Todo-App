@@ -7,8 +7,8 @@ import { ToDoSearch } from "./toDoSearch";
 import  {ToDoCounter}  from './toDoCounter';
 const to_dos=[
   {Text:'holis',completed :false },
-  {Text:'holis',completed :false },
-  {Text:'holis',completed :false },
+  {Text:'sdaf',completed :false },
+  {Text:'llorar con la llorona',completed :false },
 ]
 
 function App() {
