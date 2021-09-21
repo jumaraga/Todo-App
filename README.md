@@ -68,3 +68,163 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Curso de JavaScript Profesional
+
+# This
+
+Is a concept that many programming languages. This se refiere a un objeto, ese objeto es el que actualmente esta ejecutando un pedazo de código.
+
+## As Global Scope
+
+whenever we
+
+## in fucnctions
+
+cuando ejecutamos directamente la function js considera a this como el objeto global window.
+
+A menos que estemos usando el strict mode
+
+## In Objects
+
+# Call, apply and bind
+
+Estos  3 métodos son parte  del prototipo function. Nos ayudan a establecer el contexto del this.
+
+```jsx
+<script>
+function saludar(){
+console.log(`Hola. Soy ${this.name} ${this.apellido}`}
+</script>
+
+const richard ={
+name: "Richard",
+apellido: "Kaufman",
+}
+saludar.call(richard);
+
+function caminar (metros,direction){
+console.log(`${this.name}`)
+```
+
+## Apply
+
+```java
+function caminar(metros, direction){
+	console.log(`${this.name} camina ${metros} metros hacia${direcction}`)
+}
+caminar.call(richard,400,'oeste');
+const valores =[800,`noreste`];
+caminar.apply(richard, valores);
+```
+
+## bind
+
+```jsx
+
+```
+
+## function Currying
+
+```jsx
+const buttons= document.getElemnetByClassname("call-to-action");
+button.forEach(button =>{
+	buttons.onclick=()=> alert(`nunca pares de aprender`)
+}// esto no funciona por que buttons en un NodeList, es un 
+//ojeto que no tiene todas las propiedades de los arrays
+Array.prototype.forEach.call(buttons,button=>{
+	button.onclick=()=> alert(`Nunca pares de aprender!`);
+});
+```
+
+# Prototypes
+
+En java script todos son objetos. 
+Los objetos encapsulan datos lo que minimiza el uso de variables globales
+
+## objectCreate
+
+# Herencias prototipales
+
+## Object.prototypeof
+
+# Parses y Abstract Syntax tree
+
+¡Qué hace un js engine?
+
+- Recibe código fuente
+- Parsea el código un produce un  **Abstract Syntax Tree (AST).**
+- Se compila a byte code y se ejecuta
+
+¿Qué es un parse?
+
+Agarra nuestro codigo fuente y lo descompone en tokens
+
+## Tipos de parsing de V8
+
+### Eager Parsing
+
+### Lazy Parsing
+
+- Encuentra errores de sintaxis
+- Crea AST
+- Construye Scopes
+
+Estamos retrazando una parte del codigo
+
+- No se construye el AST
+- Doble de rápido que el eager parser
+- Construye los scopes parcialmente
+
+## Bitecode
+
+## Machine code
+
+# Event loop
+
+Es lo hace que js paresca multi hilo cuando realmente es de un solo hilo
+
+Organización de tdatos en jasva escirpt
+
+### Stack
+
+Dentro del stack los procesos que van avanzado en la forma de que el primero que llega es el primero que sale.
+
+### Memory heap
+
+Aquí es donde se guardan las variables.
+
+# Generator
+
+Son funciones que nos permiten detener su ejecución  y volver  a retomarlas cuando necesitemos.
+
+# Patrones de diseño
+
+Son tecnicas para resolver problemas comunes en el desarrollo de software
+
+Se refiere a problemas que se pueden resolver dentro de un contexto con todas sus limitaciones
+
+la solución tiene que ser genérica para alcanzar la meta dentro de un contexto.
+
+¿De donde vienen los patrones de diseño?
+
+Viene de la arquitectura con Christopher Alexander
+
+ 
+
+## Beneficios de usar patrones de diseño
+
+Nos sirven as  tools that can provide responses very specific to certain problems
+
+## Criticas
+
+- Introducen complejidad
+- no son algo que queramos usar constantemente ,solo en caso de que sean muy complejos los problemas
+- 
+
+# Categorías de patrones de diseño
+
+## Creacionales
+
+## Estructurales
+
+## De comportamiento
